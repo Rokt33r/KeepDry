@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KeepDry</title>
+    <link rel="stylesheet" href="dist/index.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div>
+      <section class='exampleJumbotron'>
+        <h1>KeepDry</h1>
+        <h2>Stylus mixins for Boost</h2>
+        <p>Made by MAISIN&amp;CO.</p>
+      </section>
+
+      <section class='exampleSection'>
+        <h2 class='exampleHeader'>Typography</h2>
+
+        <h3>Font style</h3>
+        <p>基本的にBodyに次のコードでFont styleが指定されています。</p>
+
+        <pre class='exampleCodePanel'><code>font-size 14px
+font-family 'Lato'
+line-height 1.6</code></pre>
+
+        <h3><code>typo()</code>mixin</h3>
+        <p>KeepDryは基本的なTypographyが全部初期化されています。</p>
+
+        <div class='examplePanel'>
+          <h1>Heading1 50px</h1>
+          <h2>Heading2 42px</h2>
+          <h3>Heading3 36px</h3>
+          <h4>Heading4 30px</h4>
+          <h5>Heading5 24px</h5>
+          <h6>Heading6 14px</h6>
+
+          <hr>
+
+          <p>Paragraph - Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The franchise depicts a galaxy described as "far, far away" in the distant past, and portrays adventures and battles between good and evil.</p>
+
+          <hr>
+
+          <strong>Bolded</strong>
+          <em>Italicized</em>
+          <a>Colored</a>
+          <u>Underlined</u>
+        </div>
+
+        <blockquote>全般的なFontsizeは<a href='http://getskeleton.com/' target='_blank'>Skeleton</a>を参考しました。</blockquote>
+
+        <h3><code>marked()</code>mixin</h3>
+        <p>MarkdownのStylingのとき使われます。<code>typo()</code>mixinに<code>ul</code><code>li</code><code>blockquote</code>のstyleが追加されています。</p>
+
+        <div class='exampleMarkedPanel'>
+          <h1>Heading1 50px</h1>
+          <h2>Heading2 42px</h2>
+          <h3>Heading3 36px</h3>
+          <h4>Heading4 30px</h4>
+          <h5>Heading5 24px</h5>
+          <h6>Heading6 14px</h6>
+
+
+          <h1>Paragraph</h1>
+          <p>Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The franchise depicts a galaxy described as "far, far away" in the distant past, and portrays adventures and battles between good and evil.</p>
+
+          <strong>Bolded</strong>
+          <em>Italicized</em>
+          <a>Colored</a>
+          <u>Underlined</u>
+        </div>
+      </section>
+
+
+      <section class='exampleSection'>
+        <h2 class='exampleHeader'>Control</h2>
+
+        <h3>Buttons</h3>
+
+        <div class='examplePanel'>
+
+          <p>Select customize</p>
+
+          <button class='btnDefault'>btnDefault()</button>
+          <button class='btnPrimary'>btnPrimary()</button>
+          <button class='btnStrip'>btnStrip()</button>
+
+          <br>
+          <br>
+
+          <button class='btnDefaultNormalSize'>Button</button>
+          <button class='btnPrimaryNormalSize'>Button</button>
+          <button class='btnStripNormalSize'>Button</button>
+          <br>
+          <button class='btnDefaultSmallSize'>Button</button>
+          <button class='btnPrimarySmallSize'>Button</button>
+          <button class='btnStripSmallSize'>Button</button>
+
+        </div>
+
+        <h3>Forms</h3>
+        <div class='examplePanel'>
+          <form class='exampleForm'>
+            <div></div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

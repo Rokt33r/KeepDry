@@ -1,0 +1,24 @@
+table()
+  thead
+    tr
+      background-color bgColor
+      th
+        border-style solid
+        padding 15px 5px
+        border-width 1px 0 2px 1px
+        border-color borderColor
+        &:last-child
+          border-right solid 1px borderColor
+  tbody
+    tr
+      &:nth-child(2n + 1)
+        background-color darken(bgColor, 5%)
+      &:nth-child(2n)
+        background-color bgColor
+      td
+        border-style solid
+        padding 15px 5px
+        border-width 0 0 1px 1px
+        border-color borderColor
+        &:last-child
+          border-right solid 1px borderColor

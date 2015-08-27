@@ -1,0 +1,24 @@
+{
+  "name": "keepdry",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dick Choi <fluke8259@gmail.com> (http://rokt33r.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.0.6",
+    "gulp-watch": "^4.3.5",
+    "http-server": "^0.8.0",
+    "merge-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "nib": "^1.1.0"
+  }
+}

@@ -1,0 +1,85 @@
+section.exampleSection
+  h2.exampleHeader Typography
+  
+  h3 Font style
+  p 基本的にBodyに次のコードでFont styleが指定されています。
+  
+  pre.exampleCodePanel
+    code.
+      font-size 14px
+      font-family 'Lato'
+      line-height 1.6
+      
+  h3 <code>typed()</code> mixin
+  p 基本的にBodyに次のコードでFont styleが指定されています。
+  
+  div.examplePanel
+    h1 Heading1 50px
+    h2 Heading2 42px
+    h3 Heading3 36px
+    h4 Heading4 30px
+    h5 Heading5 24px
+    h6 Heading6 14px
+    
+    p
+      | Paragraph - Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The franchise depicts a galaxy described as "far, far away" in the distant past, and portrays adventures and battles between good and evil.
+    p
+      strong Bold
+    p
+      em Italic
+    p
+      u Underline
+  
+  h3 <code>marked()</code>mixin
+  p <code>marked()</code>の場合、<code>typed()</code>にMarkdownで使われる<b>Tag</b>、<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;code&gt;</code>などにスタイルを追加してくれるMixinです。
+  
+  div.exampleMarkedPanel
+    h5 Unordered list
+    ul
+      li Alfa
+      li Bravo
+      li Charlie
+        ul
+          li Deeper..
+            ul
+              li Much deeper...
+      li Delta
+      
+    h5 Ordered list
+    ol
+      li Echo
+      li Foxtrot
+      li Golf
+      li Hotel
+
+    h5 Blockquote
+    
+    blockquote Some blockquote....
+    
+    h5 Code(inline)
+    p paragraph with some <code>code</code>
+    
+    h5 Code(block)
+    pre
+      code console.log('Yolo')
+
+    h5 Table
+    table
+      thead
+        tr
+          th Id
+          th Name
+          th E-mail
+      tbody
+        tr
+          td 1
+          td Dick Choi
+          td dickchoi@example.com
+        tr
+          td 2
+          td Dick Choi
+          td dickchoi@example.com
+        tr
+          td 3
+          td Dick Choi
+          td dickchoi@example.com

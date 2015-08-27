@@ -1,0 +1,70 @@
+@import '../lib'
+
+body
+  typed()
+
+.exampleJumbotron
+  width 100%
+  padding 75px 50px
+  h1
+    color brandColor
+  h2
+    font-size 36px
+
+.exampleSection
+  width 100%
+  padding 0 50px
+  marked()
+  margin-bottom 25px
+
+.exampleHeader
+  border-bottom solid 2px borderColor
+  margin-bottom 15px
+
+.examplePanel
+  padding 15px
+  borderDefault()
+  mb()
+
+.exampleMarkedPanel
+  @extend .examplePanel
+  marked()
+
+.exampleCodePanel
+  @extend .examplePanel
+
+.btnGroup button
+  btn()
+  margin 0 2px 15px
+.btnLargeGroup button
+  btnLg()
+  margin 0 2px 15px
+
+.btnDefault
+  btnDefault()
+.btnPrimary
+  btnPrimary()
+.btnStrip
+  btnStrip()
+
+.defaultStyleInputGroup
+  mb()
+  input, textarea, select
+    iptDefault()
+    margin 0 5px 15px
+    border-radius 5px
+.stripStyleInputGroup
+  mb()
+  input, select
+    iptStrip()
+    margin 0 5px
+    border-radius 0
+.alertSuccess
+  alertSuccess()
+  btn()
+.alertError
+  alertError()
+  btn()
+.alertInfo
+  alertInfo()
+  btn()
