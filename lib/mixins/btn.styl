@@ -7,10 +7,11 @@ btnDefault()
   background-color transparent
   color btnColor
   transition 0.1s
+  text-decoration none
   &:hover, &:focus
     border-color btnHighlightenColor
     color btnHighlightenColor
-  &:active
+  &:active, .active
     border-color btnPrimaryColor
     background-color btnPrimaryBorderColor
     color bgColor
@@ -27,13 +28,14 @@ btnPrimary()
   background-color transparent
   color btnPrimaryColor
   transition 0.1s
+  text-decoration none
   &:hover, &:focus
     border-color btnPrimaryHighlightenColor
     color btnPrimaryHighlightenColor
-  &:active
+  &:active, .active
     background-color btnPrimaryColor
     color bgColor
-  &:disabled
+  &:disabled, &.disabled
     opacity 0.6
   &:focus
     outline none
@@ -44,20 +46,25 @@ btnStrip()
   background-color transparent
   color btnColor
   transition 0.1s
+  text-decoration none
   &:hover, &:focus
     color btnHighlightenColor
-  &:active
-    color btnPrimaryHighlightenColor
+  &:active, .active
+    color btnPrimaryColor
+  &:disabled, &.disabled
+    opacity 0.6
   &:focus
     outline none
 
 // Sizing
 btnLg()
+  display inline-block
   border-radius 5px
   height 44px
   line-height 44px
   padding 0 15px
 btn()
+  display inline-block
   border-radius 5px
   height 33px
   line-height 33px
